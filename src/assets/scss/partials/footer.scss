@@ -1,0 +1,33 @@
+.shop {
+    background-color: #0282F9;
+
+    .container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+           width: 2.5rem;
+            margin: 1.25rem;
+        }
+
+        .img-container {
+            display: flex;
+            align-items: center;
+
+            h6 {
+                color: white;
+            }
+        }
+
+        
+    }
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+
+}

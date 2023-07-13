@@ -5,7 +5,7 @@ header {
     padding-bottom: .9375rem;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     img {
@@ -14,7 +14,7 @@ header {
 
     .menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: nowrap;
 
         .single-menu {
