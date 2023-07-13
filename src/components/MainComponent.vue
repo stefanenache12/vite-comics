@@ -14,14 +14,17 @@ export default {
 
 <template>
     <main>
-        MAIN
+        CONTENT GOES HERE
     </main>
 </template>
 
 <style lang="scss" scoped>
-@use "../assets/scss/partials/variables.scss" as *;
 
 main {
-    padding: $main-padding;
+    height: 150px;
+    background-color: black;
+    text-align: center;
+    color: white;
 }
+
 </style>

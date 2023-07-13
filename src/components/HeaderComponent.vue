@@ -1,8 +1,25 @@
 <script>
 export default {
     name: "HeaderComponent",
-    data() {
+    data() {{
         return {
+            menu: [
+                'CHARCTERS',
+                'COMICS',
+                'MOVIES',
+                'TV',
+                'GAMES',
+                'COLLECTIBILIES',
+                'VIDEOS',
+                'FANS',
+                'NEWS',
+                'SHOP'
+            ],
+
+            logo: [
+                'src/vue-dc-comics/img/dc-logo.png'
+            ]
+        }
 
         }
     },
@@ -14,13 +31,20 @@ export default {
 
 <template>
     <header>
-        HEADER
+
+        <div>
+            <img :src="logo" alt="Logo DC Comics">
+        </div>
+
+        <div  class="menu">
+            <div v-for="singleMenu in menu" class="single-menu">
+                {{ singleMenu }}
+            </div>
+        </div>
+        
     </header>
 </template>
 
 <style lang="scss" scoped>
-header {
-    padding: 40px;
-    text-align: center;
-}
+    @use "src/assets/scss/header.scss";
 </style>
