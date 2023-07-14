@@ -22,7 +22,7 @@ export default {
 
 main {
     height: 150px;
-    background-color: black;
+    background-color: #1C1C1C;
     text-align: center;
     color: white;
 }
