@@ -166,4 +166,12 @@ export default {
 
 <style lang="scss" scoped>
     @use "src/assets/scss/partials/footer.scss";
+
+    button {
+        padding: 10px 20px;
+        background-color: #303030;
+        border: 2px solid #0282F9;
+        color: white;
+        font-weight: bold;
+    }
 </style>

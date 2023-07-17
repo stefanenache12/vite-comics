@@ -8,25 +8,35 @@ export default {
     },
     methods: {
 
+    },
+    props: {
+        singleseriesImage: String,
+        singleseriesTitle: String
     }
 }
 </script>
 
 <template>
 
-    <div class="cards">
-
+    <div class="single-card">
+        <div>
+            <img
+                :src="singleseriesImage"
+                :alt="singleseriesTitle"
+            />
+        </div>
+        <h4>{{ singleseriesTitle }}</h4>
     </div>
   
 </template>
 
 <style lang="scss" scoped>
 
-.cards {
-    height: 300px;
-    width: 70%;
-    margin: auto;
-    padding: 20px;
-}
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        padding: 5px;
+    }
  
 </style>
